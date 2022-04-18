@@ -1,0 +1,1 @@
+# Automatic Border Cropping? Done.

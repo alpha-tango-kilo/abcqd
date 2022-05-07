@@ -2,9 +2,16 @@
 name = "abcqd"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.58"
 authors = ["alpha-tango-kilo <git@heyatk.com>"]
 readme = "README.md"
 license = "GPL-3.0-only"
 repository = "https://codeberg.org/alpha-tango-kilo/abcqd"
 
-[dependencies]
+[dependencies.image]
+version = "0.24"
+default-features = false
+features = [
+    "jpeg",
+    "png",
+]

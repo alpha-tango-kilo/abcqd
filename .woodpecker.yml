@@ -1,10 +1,10 @@
 pipeline:
   build:
-    image: rust
+    image: rust:1.58
     commands:
       - cargo build
   lint:
-    image: rust
+    image: rust:1.58
     commands:
       - rustup component add rustfmt clippy
       - cargo fmt -- --check --files-with-diff
